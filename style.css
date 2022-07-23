@@ -1,0 +1,241 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    
+}
+
+#container {
+    position: absolute;
+    top: 36%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.3s ease;
+}
+
+#container{
+    /* height: 270px;
+    width: 550px; */
+    background: black;
+    color: aliceblue;
+    border-radius: 3ch;
+    justify-content: center;
+    padding: 30px;
+    transition: all 0.3s ease;
+    /* position: fixed; */
+
+
+}
+
+
+.container.hide {
+    opacity: 0;
+    pointer-events: none;   
+
+}
+
+
+
+  #background-video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: -1;
+  }
+
+#startingPage {
+    height: 220px;
+    width: 400px;
+}
+
+#startingPage h2 {
+    font-size: 40px;
+    color: #cdcfdb;
+    /* position: fixed; */
+
+}
+
+#winner h2{
+    font-size: 28px;
+    color: #cdcfdb;
+    font-weight: bold;
+
+}
+#startingPage #line {
+    height: 1px;
+    width: 100%;
+    background: #c3cfdb;
+    margin: 20px 0;
+    /* position: fixed; */
+
+}
+
+#startingPage h4 {
+    font-size: 25px;
+    /* position: fixed; */
+    color: #b9b9c5;
+    
+}
+
+#startingPage #button {
+    height: auto;
+    width: 100%;
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    /* position: fixed; */
+
+}
+
+#button button {
+    height: 55px;
+    width: 180px;
+    cursor: pointer;
+    background: #29cde0;
+    border: none;
+    outline: none;
+    color: #2b2d47;
+    font-weight: bold;
+    font-size: 15px;
+    border-radius: 10px;
+    transform: scale(1);
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+    transition: 0.5s;
+}
+
+#button button:first-child {
+    margin-right: 40px;
+}
+
+#startingPage #button button:hover,
+#winner #button button:hover {
+    transform: scale(0.90);
+}
+
+#winner {
+    display: none;
+    justify-content: center;
+
+}
+#winner{
+    background-color: black;
+    height:240px;
+    width: 480px;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 40%;
+    left: 50%;
+    padding: 30px;
+    border-radius: 35px;
+}
+
+#winner #button {
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#winner #button button {
+    margin-top: 20px;
+}
+
+#mainPage {
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* transform: translate(-50%, -50%); */
+    height: 550px;
+    width: 380px;
+    padding: 20px;
+    position: relative;
+    display: none;
+    background-color: #186068;
+    margin-top: 345px;
+    border-radius: 30px;
+    transform: translate(-50%, -50%);}
+
+#mainPage #headerBtns {
+    height: 60px;
+    width: 310px;
+    border-radius: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+}
+
+#mainPage #headerBtns button {
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 20px;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.60);
+}
+
+#mainPage #headerBtns #O_Turn {
+    left: 160px;
+    z-index: 3;
+}
+
+#showChange {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 60px;
+    width: 160px;
+    border-radius: 50px;
+    background: #29cde0;
+    z-index: 1;
+    transition: 0.2s;
+}
+
+#gameBoard {
+    height: 400px;
+    width: 340px;
+    position: absolute;
+    top: 150px;
+    left: 10px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px;
+    grid-gap: 15px;
+    padding: 20px;
+    border-radius: 38px;
+}
+
+.boxes {
+    height: 100px;
+    width: 100px;
+    box-shadow: 2px 2px 2px rgb(255 255 255 / 26%), -2px -2px 5px rgb(0 0 0 / 87%);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+
+.boxes i {
+    font-size: 60px;
+    color: #29cde0;
+}
+
+#winner{
+
+}
